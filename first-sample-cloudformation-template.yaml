@@ -12,6 +12,9 @@ Resources:
           Value: web-server
         - Key: Project
           Value: AWS CloudFormation Step by Step
+
+      SecurityGroupIds:
+        - !Ref WebServerSecurityGroup
   
   WebServerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
